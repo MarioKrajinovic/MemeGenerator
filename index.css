@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Anton', sans-serif;    margin: 0px;
+    height: 100vh;
+}
+/*Header*/
+header{
+    padding: 15px 30px;
+    background-image: linear-gradient(45deg, #113a1a, #1e7229);
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+}
+header img{
+    width: 50px;
+    margin-right: 10px;
+}
+/*Meme*/
+menu{
+    padding-left: 0px;
+    display: flex;
+    height: 80vh;
+}
+.form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-joke input{
+    display: block;
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    border: 2px solid #113a1a;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.button-joke button, .action label{
+    width: 190px;
+    height: 35px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    border: 2px solid #113a1a;
+    background: linear-gradient(45deg, #113a1a, #1e7229);
+    color: white;
+}
+.button{
+    width: 400px !important;
+    margin: 0px 10px 10px 10px!important;
+}
+.action{
+    display: flex;
+}
+.action input{
+    width: 0px;
+}
+.action label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;    
+}
+.img{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 50%;
+    margin-right: 15px;
+    background-color: whitesmoke;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+    
+.meme-image{
+    width: 100%;
+}
+.top{
+    position: absolute;
+    left: 50%;
+    color: white;
+    font-size: xx-large;
+    font-style: oblique;
+    text-shadow: 2px 2px black; 
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    text-overflow: clip;
+    cursor: pointer;
+    -webkit-user-drag: none; 
+    user-select: none;
+}
+.bottom{
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    color: white;
+    font-size: xx-large;
+    text-shadow: 2px 2px black; 
+    font-style: oblique;
+    transform: translateX(-50%);
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-user-drag: none; 
+    user-select: none;
+}
+@media screen and (max-width: 768px){
+    body{
+        height: auto;
+    }
+    menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .form{
+        margin-bottom: 20px;
+    }
+    .img{
+        width: 53%;
+        margin-right: 0px;
+        border: none;
+    }
+    .top, .bottom{
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 425px){
+    .img{
+        width: 95%;
+    }
+    .top, .bottom{
+        font-size: large;
+    }
+    .form{
+        display: block;
+        width: 95%;
+    }
+    .input-joke input{
+        width: 100%;
+    }
+    .button-joke button, .action label{
+        width: 50%;
+        margin: 5px 2px;
+    }
+    .button{
+        width: 100% !important;
+        margin: 0px 0px 10px 0px!important;
+    }
+}
+
